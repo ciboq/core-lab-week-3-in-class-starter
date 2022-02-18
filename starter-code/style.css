@@ -3,20 +3,27 @@
 /* add styling here */
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400;1,600;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,500;0,600;1,500;1,600&family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500&display=swap');
 
-
+body{
+    background-color: rgb(247, 235, 221);
+}
 
 .container{
     margin-top: 10vw;
-    margin-left: 20vw;
-    margin-right: 20vw;
+    margin-left: 25vw;
+    margin-right: 25vw;
     background-color: rgb(247, 235, 221);
+}
+
+.content{
+    line-height: 1.4em;
 }
 
 header{
     color: #8e7896;
     font-family: 'Source Sans Pro', sans-serif;
-    line-height: 1em
+    line-height: 0.7em
 }
 
 h1{
@@ -30,5 +37,67 @@ h2{
 
 
 a{
-    color: #8e7896;
+    background: linear-gradient(to right, rgb(228, 74, 27) ,#6e5477); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
+p{
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 300;
+}
+
+h3{
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 600;
+}
+
+.line{
+    background: linear-gradient(to right, rgb(228, 74, 27) ,#6e5477); 
+    -webkit-background-clip:border-box;
+    -webkit-text-fill-color: transparent; 
+    }
+
+img{
+    box-shadow:10px 3px;
+    border-radius: 10px;
+    width: 180px;
+    height: 220px;
+    object-fit:cover;
+    padding-left: 20px;
+    float: right;
+}
+
+blockquote{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(243, 219, 212);
+    height: 15vh;
+    width: 50vw;
+}
+
+.flex-container{
+display: flex;
+height: 180px;
+justify-content: center;
+}
+
+.flex-container > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(192, 124, 97);
+    background-color:rgb(243, 219, 212);
+    width: 30vw;
+    height: 15vh;
+    margin: 10px;
+}
+
+.flex-container>div:nth-child(2){
+    align-self:flex-end;
+    justify-self: center;
 }
