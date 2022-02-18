@@ -16,6 +16,22 @@ body{
     background-color: rgb(247, 235, 221);
 }
 
+p{
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 300;
+}
+
+.content + p::first-letter {
+    color: white;
+  background-color: black;
+  border-radius: 2px;
+  box-shadow: 3px 3px 0 red;
+  font-size: 250%;
+  padding: 6px 3px;
+  margin-right: 6px;
+  float: left;
+}
+
 .content{
     line-height: 1.4em;
 }
@@ -42,24 +58,22 @@ a{
     -webkit-text-fill-color: transparent; 
 }
 
-p{
-    font-family: 'Source Sans 3', sans-serif;
-    font-weight: 300;
-}
-
 h3{
     font-family: 'Source Sans 3', sans-serif;
     font-weight: 600;
 }
 
 .line{
+    display: block;
+    height: 1px;
+    border-top: 1px solid #ccc;
     background: linear-gradient(to right, rgb(228, 74, 27) ,#6e5477); 
     -webkit-background-clip:border-box;
     -webkit-text-fill-color: transparent; 
     }
 
 img{
-    box-shadow:10px 3px;
+    box-shadow:10px 3px rgb(85, 110, 85);
     border-radius: 10px;
     width: 180px;
     height: 220px;
@@ -69,13 +83,21 @@ img{
 }
 
 blockquote{
+    font-family:'Source Sans 3', sans-serif;
+    font-weight: 200;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     background-color: rgb(243, 219, 212);
+    border-style: solid;
+    border-left-color: rgb(192, 124, 97);
+    border-top: #ccc;
+    border-bottom: #ccc;
+    border-right: #ccc;
+    border-left-width: 5px;
     height: 15vh;
-    width: 50vw;
+    width: 40vw;
 }
 
 .flex-container{
