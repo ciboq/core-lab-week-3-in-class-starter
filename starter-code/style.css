@@ -21,8 +21,12 @@ p{
     font-weight: 300;
 }
 
-.content + p::first-letter {
-    color: white;
+.author a::after{
+    content: 'hi' ;
+}
+
+.content + p:first-of-type::first-letter {
+color: white;
   background-color: black;
   border-radius: 2px;
   box-shadow: 3px 3px 0 red;
